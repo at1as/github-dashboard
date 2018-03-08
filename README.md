@@ -28,5 +28,5 @@ repos analysed from those created by the at1as account
 
 
 ### Environemnt
-* Build on Ruby 2.4.0 on MacOS
+* Built with Ruby 2.5.0 on MacOS
 
