@@ -4,6 +4,7 @@ require 'json'
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :template_languages, %i[html erb]
 
   helpers do
     def protected!

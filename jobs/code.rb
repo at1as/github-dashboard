@@ -25,7 +25,6 @@ SCHEDULER.every '30m', :first_in => 0 do
     end
   end
 
-  puts code
   code.sort_by {|k, v| -v }.to_h.each do |lang, bytes|
     code_list << {
       label: lang,

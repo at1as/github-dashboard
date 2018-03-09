@@ -17,9 +17,11 @@ end
 
 SCHEDULER.every '30m', :first_in => 1000 do
   
-  commits     = Hash.new(0) 
   commit_urls = []
   points      = []
+
+  commits     = {}
+  0.upto(364) { |days_ago| commits[days_ago] = 0 }
 
   # Get link to each repos languages URL
   repos = JSON.parse(HTTParty.get(URL, :basic_auth => AUTH).body)
